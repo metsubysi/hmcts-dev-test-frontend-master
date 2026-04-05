@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Task Manager</h1>
+
+    <!-- Create Task -->
+    <div class="card">
+        <h3>Create Task</h3>
+
+        <input type="text" id="title" placeholder="Title">
+
+        <textarea id="description" placeholder="Description"></textarea>
+
+        <select id="status">
+    <option value="TODO">TODO</option>
+    <option value="IN_PROGRESS">IN_PROGRESS</option>
+    <option value="COMPLETED">COMPLETED</option>
+    <option value="CANCELLED">CANCELLED</option>
+        </select>
+
+        <input type="datetime-local" id="dueDate">
+
+        <button class="btn-primary" id="addTaskBtn">Add Task</button>
+    </div>
+
+    <!-- Task List -->
+    <div id="taskList"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
